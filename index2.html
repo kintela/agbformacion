@@ -38,7 +38,45 @@
 </script>
 </head> 
 <body>
-    <div class="modal fade" id="popUpVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!--POP UPS RISOTERAPIA---->
+    <div class="modal fade" id="popUpVideoRisoterapia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Viedo Risoterapia</h4>
+                </div>
+                <div class="modal-body">
+                   <video src="multimedia/videos/teambuilding.mp4" controls autoplay width="350px" height="300px">Team Building</video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popUpFotosRisoterapia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Fotos Risoterapia</h4>
+                </div>
+                <div class="modal-body">
+				<object id="flash1" data="fotos-risoterapia.swf" height="600" type="application/x-shockwave-flash" width="400">
+					<param name="movie" value="multimedia/flash/fotos-risoterapia.swf" />
+					<param name="quality" value="High" />
+				</object>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--POP UPS OUTDOOR-->
+    <div class="modal fade" id="popUpVideoOutdoor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -46,14 +84,35 @@
                     <h4 class="modal-title" id="myModalLabel">Viedo Team Building</h4>
                 </div>
                 <div class="modal-body">
-                        <video src="https://nubelocal.innovup.cc/index.php/s/IaJwSQslsUEAnnc" controls autoplay width="350px" height="300px">Team Building</video> 
+                   <video src="multimedia/videos/teambuilding.mp4" controls autoplay width="350px" height="300px">Team Building</video>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="popUpFotosOutdoor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Fotos Outdoor</h4>
+                </div>
+                <div class="modal-body">
+				<object id="flash1" data="fotos-outdoor-training.swf" height="600" type="application/x-shockwave-flash" width="400">
+					<param name="movie" value="multimedia/flash/fotos-outdoor-training.swf" />
+					<param name="quality" value="High" />
+				</object>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 <div id="wrapper">
  	<div id="cabecera">
 		<!-- #BeginEditable "Cabecera" -->
@@ -109,22 +168,29 @@
 			<h1>agb formaci&oacute;n</h1>
 			<div id="MenuRisoterapia">
 				 <strong><a href="#" onclick="mostrarRisoterapia()">agb Risoterapia</a></strong>
-                 <div id="subMenus" style="display:none">
+                 <div id="subMenusRisoterapia" style="display:none">
                     <div class="enlaces" id="SubMenuRisoterapia">
                         <img src="img/flecha.gif" alt="" width="7" height="7" /> <a href="risoterapia/risoterapia.html#Risoterapia-en-organizaciones">Risoterapia en Organizaciones</a><br/>
                         <img src="img/flecha.gif" alt="" width="7" height="7" /> <a href="risoterapia/risoterapia.html#Risoterapia-que-es">&iquest;Qu&eacute; es?</a><br/>
                         <img src="img/flecha.gif" alt="" width="7" height="7" /> <a href="risoterapia/risoterapia.html#Risoterapia-sentido-del-humor">El sentido del humor</a><br/>
                         <img src="img/flecha.gif" alt="" width="7" height="7" /> <a href="risoterapia/risoterapia.html#Risoterapia-beneficios">Beneficios</a><br/>
                         <img src="img/flecha.gif" alt="" width="7" height="7" /> <a href="risoterapia/risoterapia.html#Taller-risoterapia">&iquest;C&oacute;mo es un taller?</a><br/>
-                        <img src="img/flecha.gif" alt="" width="7" height="7" /> <a href="risoterapia/risoterapia-fotos.html" data-toggle="modal" data-target="popUp">Galería de fotos</a><br/>
-                        <img src="img/flecha.gif" alt="" width="7" height="7" /> <a href="#" data-toggle="modal" data-target="#popUpVideo">Video</a><br/>
+                        <img src="img/flecha.gif" alt="" width="7" height="7" /> <a href="#" data-toggle="modal" data-target="#popUpFotosRisoterapia">Galería de fotos</a><br/>
+                        <img src="img/flecha.gif" alt="" width="7" height="7" /> <a href="#" data-toggle="modal" data-target="#popUpVideoRisoterapia">Video</a><br/>
                      </div>
                  </div>
 			</div>
 			
 			<div id="MenuOutdoor">
-				 <strong><a href="outdoor-training/outdoor-training.html">agb Outdoor Training</a></strong>
-			
+				 <strong><a href="#" onclick="mostrarOutdoor()">agb Outdoor Training</a></strong>
+                <div id="subMenusOutdoor" style="display:none">
+                    <div class="enlaces" id="SubMenuOutdoor" >
+                        <img src="../img/flecha.gif" alt="" width="7" height="7" /> <a href="outdoor-training.html#OutdoorMarcador1">Qu&eacute; es</a><br/>
+                        <img src="../img/flecha.gif" alt="" width="7" height="7" /> <a href="outdoor-training.html#OutdoorMarcador2">Beneficios</a><br/>
+                        <img src="../img/flecha.gif" alt="" width="7" height="7" /> <a href="#" data-toggle="modal" data-target="#popUpFotosOutdoor">Galería de fotos</a><br/>
+                        <img src="../img/flecha.gif" alt="" width="7" height="7" /> <a href="#" data-toggle="modal" data-target="#popUpVideoOutdoor">Video Presentación Team Building</a><br/>
+                    </div>
+                </div>
 			</div>
 		
 			<div id="MenuCrecimiento">

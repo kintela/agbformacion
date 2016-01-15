@@ -10,12 +10,23 @@ function mostrar(){
 }
 
 function mostrarRisoterapia(){
-    var elemento=document.getElementById('subMenus');
+    var elemento=document.getElementById('subMenusRisoterapia');
     
     if(elemento.style.display=="none"){
-        document.getElementById('subMenus').style.display = 'block';
+        document.getElementById('subMenusRisoterapia').style.display = 'block';
     }
     else{
-        document.getElementById('subMenus').style.display = 'none';
+        document.getElementById('subMenusRisoterapia').style.display = 'none';
+    }
+}
+
+function mostrarOutdoor(){
+    var elemento=document.getElementById('subMenusOutdoor');
+    
+    if(elemento.style.display=="none"){
+        document.getElementById('subMenusOutdoor').style.display = 'block';
+    }
+    else{
+        document.getElementById('subMenusOutdoor').style.display = 'none';
     }
 }
