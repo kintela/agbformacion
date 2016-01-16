@@ -2,7 +2,7 @@
   "name": "agbformacion",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,12 @@
     "url": "https://innovupbilbao.visualstudio.com/DefaultCollection/_git/agbformacion"
   },
   "author": "kintela",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+       "gulp": "^3.9.0",
+        "bower": "^1.7.1",
+        "del": "^2.2.0",
+        "gulp-debug": "^2.1.2",
+        "require-dir": "^0.3.0"
+  }
 }
