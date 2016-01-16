@@ -1,4 +1,4 @@
-var agbApp = angular.module('app', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
+var agbApp = angular.module('app', ['ngRoute', 'ngAnimate']);
 
 agbApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
