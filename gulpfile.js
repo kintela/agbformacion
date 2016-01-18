@@ -1,37 +1,20 @@
-var loadPlugins = require("gulp-load-plugins");
+var gulp = require('gulp');
+var serve = require('gulp-serve');
 
-var $ = loadPlugins({
-    rename: {
-        "gulp-main-bower-files": "mainBowerFiles",
-        "gulp-angular-filesort": "angularFileSort"
-    }
+gulp.task("build:index",function(){
+    return gulp.src("index.html")
+            .pipe($.plumber())
+            .pipe($.inject(gulp.src([paths.dest.libs + "**/*.js", paths.dest.js + "**/*.js"], { read: false }), { relative: true }))
+            .pipe($.inject(gulp.src(paths.dest.css + "**/*.css", { read: false }), { relative: true }))        
+            .pipe(gulp.dest(paths.dest.root));    
 });
 
-$.del = require("del");
-
-module.exports = $;
-
-var gulp = require("gulp");
-
-gulp.task("build:dependencies:js", function () {
-    var filterJS = $.filter("**/*.js");
-
-    return gulp.src('./bower.json')
-              .pipe($.plumber())
-              .pipe($.mainBowerFiles({
-                   overrides: {
-                       bootstrap: {
-                           main: [
-                               "./dist/js/bootstrap.js"                               
-                           ]
-                       }
-                   }
-               }))
-              .pipe(filterJS)
-              .pipe($.sourcemaps.init())
-              .pipe($.concat("libs.js"))
-              .pipe($.uglify())
-              .pipe($.sourcemaps.write("maps"))              
-              .pipe(gulp.dest(paths.dest.libs));
-});
-
+gulp.task('serve', serve('public'));
+gulp.task('serve-build', serve(['public', 'build']));
+gulp.task('serve-prod', serve({
+  root: ['public', 'build'],
+  port: 80,
+  middleware: function(req, res) {
+    // custom optional middleware 
+  }
+}));
