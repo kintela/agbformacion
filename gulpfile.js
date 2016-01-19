@@ -9,10 +9,10 @@ gulp.task("build:index",function(){
             .pipe(gulp.dest(paths.dest.root));    
 });
 
-gulp.task('serve', serve('public'));
-gulp.task('serve-build', serve(['public', 'build']));
+gulp.task('serve', serve('wwwroot'));
+gulp.task('serve-build', serve(['wwwroot', 'build']));
 gulp.task('serve-prod', serve({
-  root: ['public', 'build'],
+  root: ['wwwroot', 'build'],
   port: 80,
   middleware: function(req, res) {
     // custom optional middleware 
