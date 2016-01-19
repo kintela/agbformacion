@@ -1,11 +1,9 @@
-var project = require("./../project.json");
-
 var paths = {
     src: {
         root: "./"
     },
     dest: {
-        root: "./" + project.webroot + "/"
+        root: "./wwwroot/"
     }
 };
 
