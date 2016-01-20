@@ -21,7 +21,15 @@ gulp.task("build:dependencies:css", function () {
 
     return gulp.src('./bower.json')
               .pipe($.plumber())
-              .pipe($.mainBowerFiles())
+               .pipe($.mainBowerFiles({
+                  overrides: {
+                      bootstrap: {
+                          main: [
+                             "./dist/css/*.min.*"
+                          ]
+                      }
+                  }
+              }))
               .pipe(filterCSS)
               .pipe($.sourcemaps.init())
               .pipe($.concat("libs.css"))
