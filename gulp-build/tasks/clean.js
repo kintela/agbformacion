@@ -30,5 +30,4 @@ gulp.task("clean:flash", function (cb) {
     $.del(paths.dest.flash, cb);
 });
 
-
 gulp.task("clean", ["clean:dependencies", "clean:css", "clean:app", "clean:html", "clean:fonts","clean:imgs","clean:flash"]);

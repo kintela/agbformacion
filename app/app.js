@@ -5,7 +5,11 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
         .when('/', {
             templateUrl: 'app/components/home/home.html',
             title: 'Inicio'
-        })        
+        }) 
+        .when('/risoterapia', {
+            templateUrl: 'app/components/risoterapia/risoterapia.html',
+            title: 'Inicio'
+        })         
 
         .otherwise({
             redirectTo: '/'
