@@ -83,7 +83,7 @@ gulp.task("build:index", ["build:dependencies", "build:css", "build:app", "build
    return gulp.src("index3.html")
         .pipe($.plumber())
         .pipe($.inject(gulp.src([paths.dest.libs + "**/*.js", paths.dest.js + "**/*.js"], { read: false }), { relative: true }))
-        .pipe($.inject(gulp.src(paths.dest.css + "**/*.css", { read: false }), { relative: true }))        
+        .pipe($.inject(gulp.src(paths.dest.css + "**/*.css", { read: false }), { relative: true }))
         .pipe(gulp.dest(paths.dest.root));
 });
 
@@ -105,6 +105,18 @@ gulp.task("build:img", function () {
             .pipe(gulp.dest(paths.dest.img));
 });
 
+gulp.task("build:flash", function () {     
+    return gulp.src(paths.src.flash)
+            .pipe($.plumber())
+            .pipe(gulp.dest(paths.dest.flash));
+});
+
+gulp.task("build:scripts", function () {     
+    return gulp.src(paths.src.script)
+            .pipe($.plumber())
+            .pipe(gulp.dest(paths.dest.js + "/scripts"));
+});
 
 
-gulp.task("build", ["build:dependencies", "build:css", "build:app", "build:html", "build:index","build:img"]);
+
+gulp.task("build", ["build:dependencies", "build:css", "build:app", "build:html","build:scripts", "build:index","build:img","build:flash"]);
