@@ -22,4 +22,8 @@ gulp.task("clean:fonts", function (cb) {
     $.del(paths.dest.fonts, cb);
 });
 
-gulp.task("clean", ["clean:dependencies", "clean:css", "clean:app", "clean:html", "clean:fonts"]);
+gulp.task("clean:imgs", function (cb) {
+    $.del(paths.dest.img, cb);
+});
+
+gulp.task("clean", ["clean:dependencies", "clean:css", "clean:app", "clean:html", "clean:fonts","clean:imgs"]);

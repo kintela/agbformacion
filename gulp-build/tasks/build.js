@@ -93,6 +93,18 @@ gulp.task("build:html", function () {
             .pipe(gulp.dest(paths.dest.js));
 });
 
+gulp.task("build:img", function () {
+     var filterImgs = $.filter([
+                        "**/*.jpg",
+                        "**/*.png",
+                        "**/*.gif"                                   
+    ]);
+    return gulp.src(paths.src.img)
+            .pipe($.plumber())
+            .pipe(filterImgs)
+            .pipe(gulp.dest(paths.dest.img));
+});
 
 
-gulp.task("build", ["build:dependencies", "build:css", "build:app", "build:html", "build:index"]);
+
+gulp.task("build", ["build:dependencies", "build:css", "build:app", "build:html", "build:index","build:img"]);
