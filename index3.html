@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="styles/libs.css">
 </head>
 <body ng-app="app">
-    <ng-include src="'app/shared/header.html'"></ng-include>
-
-    <div ng-view></div>
-
-    <ng-include src="'app/shared/footer.html'"></ng-include>
-
+    <div id="cabecera">
+        <ng-include src="'app/shared/header.html'"></ng-include>
+    </div>
+    <div id="contenido">
+        <div ng-view></div>
+        <div id="dcha">
+            <ng-include src="'app/shared/right.html'"></ng-include>
+        </div>        
+    </div>
+   
+    <div id="pie">
+        <ng-include src="'app/shared/footer.html'"></ng-include>
+    </div>
 
     <script src="libs/libs.js"></script>
     <script src="app/app.js"></script>
