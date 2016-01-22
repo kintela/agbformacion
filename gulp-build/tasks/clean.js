@@ -26,8 +26,8 @@ gulp.task("clean:imgs", function (cb) {
     $.del(paths.dest.img, cb);
 });
 
-gulp.task("clean:flash", function (cb) {
-    $.del(paths.dest.flash, cb);
+gulp.task("clean:multimedia", function (cb) {
+    $.del(paths.dest.multimedia, cb);
 });
 
-gulp.task("clean", ["clean:dependencies", "clean:css", "clean:app", "clean:html", "clean:fonts","clean:imgs","clean:flash"]);
+gulp.task("clean", ["clean:dependencies", "clean:css", "clean:app", "clean:html", "clean:fonts","clean:imgs","clean:multimedia"]);

@@ -13,6 +13,7 @@ paths.dest.css = paths.dest.root + "styles/";
 paths.dest.fonts = paths.dest.root + "fonts/";
 paths.dest.img = paths.dest.root + "img/";
 paths.dest.flash = paths.dest.root + "multimedia/flash/";
+paths.dest.multimedia = paths.dest.root + "multimedia/";
 
 paths.src.css = paths.src.root + "css/**/*.css";
 paths.src.js = paths.src.root + "app/**/*.js";
