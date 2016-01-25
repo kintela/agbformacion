@@ -26,8 +26,8 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
                     templateUrl: 'app/components/alianzas/alianzas.html',
                     title: 'Inicio'
                 }) 
-        .when('/trabajo', {
-                    templateUrl: 'app/components/trabajo/trabajo.html',
+        .when('/bolsa-trabajo', {
+                    templateUrl: 'app/components/bolsa-trabajo/bolsa-trabajo.html',
                     title: 'Inicio'
                 }) 
         .when('/contacto', {
