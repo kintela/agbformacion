@@ -9,7 +9,11 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
         .when('/risoterapia', {
             templateUrl: 'app/components/risoterapia/risoterapia.html',
             title: 'Inicio'
-        })         
+        })    
+         .when('/que-ofrecemos', {
+            templateUrl: 'app/components/que-ofrecemos/que-ofrecemos.html',
+            title: 'Inicio'
+        })       
 
         .otherwise({
             redirectTo: '/'

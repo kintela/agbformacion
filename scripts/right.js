@@ -30,3 +30,14 @@ function mostrarOutdoor(){
         document.getElementById('subMenusOutdoor').style.display = 'none';
     }
 }
+
+function mostrarCursos(){
+    var elemento=document.getElementById('cursos');
+    
+    if(elemento.style.display=="none"){
+        document.getElementById('cursos').style.display = 'block';
+    }
+    else{
+        document.getElementById('cursos').style.display = 'none';
+    }
+}
