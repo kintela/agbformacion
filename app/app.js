@@ -13,6 +13,10 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
          .when('/que-ofrecemos', {
             templateUrl: 'app/components/que-ofrecemos/que-ofrecemos.html',
             title: 'Inicio'
+        })   
+        .when('/clientes', {
+            templateUrl: 'app/components/clientes/clientes.html',
+            title: 'Inicio'
         })       
 
         .otherwise({
