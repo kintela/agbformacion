@@ -18,6 +18,22 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'app/components/clientes/clientes.html',
             title: 'Inicio'
         })       
+        .when('/equipo', {
+                    templateUrl: 'app/components/equipo/equipo.html',
+                    title: 'Inicio'
+                }) 
+        .when('/alianzas', {
+                    templateUrl: 'app/components/alianzas/alianzas.html',
+                    title: 'Inicio'
+                }) 
+        .when('/trabajo', {
+                    templateUrl: 'app/components/trabajo/trabajo.html',
+                    title: 'Inicio'
+                }) 
+        .when('/contacto', {
+                    templateUrl: 'app/components/contacto/contacto.html',
+                    title: 'Inicio'
+                }) 
 
         .otherwise({
             redirectTo: '/'
