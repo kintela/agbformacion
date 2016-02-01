@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<gallery> 
- <album title="Risoterapia" description="Risoterapia" lgpath="fotos/risoterapia/" tnpath="fotos/risoterapia/peq/">
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery>
+ <album title="Risoterapia" description="Risoterapia" lgpath="/fotos/risoterapia/" tnpath="/fotos/risoterapia/peq/">
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..globos.jpg" caption="Globos" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..risas.jpg" caption="Risas" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..abrazo.jpg" caption="Abrazo" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..calentamiento.jpg" caption="Calentamiento" />
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..espiga-2.jpg" caption="Espiga" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..estiramientos.jpg" caption="Estiramientos" /> 
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..espiga-2.jpg" caption="Espiga" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..estiramientos.jpg" caption="Estiramientos" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..estrella-de-mar.jpg" caption="Estrella de mar" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..globos-1.jpg" caption="Globos" />
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..globos-2.jpg" caption="Globos" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-explotar-globo.jpg" caption="Explotar Globos" /> 
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..globos-2.jpg" caption="Globos" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-explotar-globo.jpg" caption="Explotar Globos" />
   <img src="vita-2011.jpg" caption="Vita 2011" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..pisar-globos-2.jpg" caption="Pisar globos" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..peluqueria.jpg" caption="Pisar globos" />
@@ -20,19 +20,19 @@
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..risas-3.jpg" caption="Risas" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..risas-4.jpg" caption="Risas" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..rodillo-humano.jpg" caption="Rodillo humano" />
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-1.jpg" caption="Grupo" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-2.jpg" caption="Grupo" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-3.jpg" caption="Grupo" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-4.jpg" caption="Grupo" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-5.jpg" caption="Grupo" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-6.jpg" caption="Grupo" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-7.jpg" caption="Grupo" /> 
-  <img src="Haurreskola-2011.jpg" caption="Haurreskola 2011" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-11.jpg" caption="Grupo" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-12.jpg" caption="Grupo" /> 
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-13.jpg" caption="Grupo" /> 
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-1.jpg" caption="Grupo" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-2.jpg" caption="Grupo" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-3.jpg" caption="Grupo" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-4.jpg" caption="Grupo" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-5.jpg" caption="Grupo" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-6.jpg" caption="Grupo" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-7.jpg" caption="Grupo" />
+  <img src="Haurreskola-2011.jpg" caption="Haurreskola 2011" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-11.jpg" caption="Grupo" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-12.jpg" caption="Grupo" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-13.jpg" caption="Grupo" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-14.jpg" caption="Grupo" />
-  <img src="Pobena-2011.jpg" caption="Pobeña 2011" /> 
+  <img src="Pobena-2011.jpg" caption="PobeC1a 2011" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..risoterapia-grupo-16.jpg" caption="Grupo" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..manzanares.jpg" caption="Manzanares" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..residencia-calzada.jpg" caption="Residencia Calzada" />
@@ -40,22 +40,32 @@
   <img src="Manzanares-2011.jpg" caption="Manzanares 2011" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..aspace-zaragoza.jpg" caption="Aspace Zaragoza" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..ciudad-real.jpg" caption="Ciudad Real" />
-  <img src="outdoor-training sin agb-outdoor-training-bilbao-..ipace-mananas.jpg" caption="Ipace mañanas" />
+  <img src="outdoor-training sin agb-outdoor-training-bilbao-..ipace-mananas.jpg" caption="Ipace maC1anas" />
   <img src="outdoor-training sin agb-outdoor-training-bilbao-..ipace-tardes.jpg" caption="Ipace tardes" />
-  <img src="Ipace-mananas-2011.jpg" caption="Ipace mañanas 2011" />
+  <img src="Ipace-mananas-2011.jpg" caption="Ipace maC1anas 2011" />
   <img src="Ipace-tardes-2011.jpg" caption="Ipace tardes 2011" />
-  <img src="Fislem-mananas-2011.jpg" caption="Fislem mañanas 2011" />
+  <img src="Fislem-mananas-2011.jpg" caption="Fislem maC1anas 2011" />
   <img src="Fislem-tardes-2011.jpg" caption="Fislem tardes 2011" />
   <img src="Scouts-2011.jpg" caption="Scouts 2011" />
   <img src="Risoterapia-Aspace-Bilbao-2012.jpg" caption="Aspace Bilbao 2012" />
   <img src="Risoterapia-Vita3-Vitoria.jpg" caption="Vita3 Vitoria" />
-  <img src="Risoterapia-Ipace-Mananas-2012.jpg" caption="Ipace mañanas 2012" />
+  <img src="Risoterapia-Ipace-Mananas-2012.jpg" caption="Ipace maC1anas 2012" />
   <img src="Risoterapia-Ipace-Tardes-2012.jpg" caption="Ipace tardes 2012" />
   <img src="Risoterapia-Cruz-Roja-Bizkaia-2012.jpg" caption="Cruz Roja Bizkaia 2012" />
-  <img src="Risoterapia-Ipace-2013-mananas.jpg" caption="Ipace mañanas 2013" />
+  <img src="Risoterapia-Ipace-2013-mananas.jpg" caption="Ipace maC1anas 2013" />
   <img src="Risoterapia-Ipace-2013-Tardes.jpg" caption="Ipace tardes 2013" />
-  <img src="Risoterapia-Despedida-Soltera-Monika.jpg" caption="Despedida soltera Mónica" />
-  <img src="Risoterapia-Mas-Vision-2013.jpg" caption="Más Visión 2013" />
+  <img src="Risoterapia-Despedida-Soltera-Monika.jpg" caption="Despedida soltera MC3nica" />
+  <img src="Risoterapia-Mas-Vision-2013.jpg" caption="MC!s VisiC3n 2013" />
   <img src="Risoterapia-Hegoalde-2013.jpg" caption="Hegoalde 2013" />
- </album> 
-</gallery> 
+  <img src="Risoterapia-Afaraba-2014.jpg" caption="Afaraba 2014" />
+  <img src="Risoterapia-AspaceBa-2014.jpg" caption="AspaceBa 2014" />
+  <img src="Risoterapia-Calzada-2015.jpg" caption="Calzada 2015" />
+  <img src="Risoterapia-Calzada-2015-02.jpg" caption="Calzada 2015" />
+  <img src="Risoterapia-Fundacion-Sociosanitaria-2015.jpg" caption="FundaciC3n Sociosanitaria 2015" />
+  <img src="Risoterapia-Hospital-Manzanares-2014.jpg" caption="Hospital Manzanares 2014" />
+  <img src="Risoterapia-Ipace-2014.jpg" caption="Ipace 2014" />
+  <img src="Risoterapia-Ipace-2014-02.jpg" caption="Ipace 2014" />
+  <img src="Risoterapia-Ipace-2015.jpg" caption="Ipace 2015" />
+  <img src="Risoterapia-Ipace-2015-02.jpg" caption="Ipace 2015" />
+ </album>
+</gallery>
