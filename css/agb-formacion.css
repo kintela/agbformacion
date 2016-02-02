@@ -136,7 +136,7 @@ p {
 #izda {
 		width: 400px;
 		height: 710px;
-		background: url(img/top.gif) 0 0 repeat-x;
+		background: url(../img/top.gif) 0 0 repeat-x;
 		background-color: #FFF;
 		float: left;
 }
@@ -157,7 +157,7 @@ p {
 #centroArriba {
 	width: 424px;
 	height: 21px;
-	background: url(img/top.gif) 0 0 repeat-x;
+	background: url(../img/top.gif) 0 0 repeat-x;
 }
 	
 #centroContenido {
@@ -173,7 +173,7 @@ p {
 #dcha {
 		width: 211px;
 		height: 710px;
-		background: url(img/top_dcha.gif) 0 0 repeat-x;
+		background: url(../img/top_dcha.gif) 0 0 repeat-x;
 		background-color: #EFF0BC;
 		float: left;
 		overflow: auto;
