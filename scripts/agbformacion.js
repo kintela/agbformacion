@@ -7,6 +7,8 @@ function mostrar(){
     else{
         document.getElementById('descargaPpts').style.display = 'none';
     }
+    
+    ocultarCursos();
 }
 
 function mostrarRisoterapia(){
@@ -18,6 +20,7 @@ function mostrarRisoterapia(){
     else{
         document.getElementById('subMenusRisoterapia').style.display = 'none';
     }
+   
 }
 
 function mostrarOutdoor(){
@@ -40,5 +43,19 @@ function mostrarCursos(){
     else{
         document.getElementById('cursos').style.display = 'none';
     }
+    
+    ocultarRelax();
+}
+
+function ocultarRelax(){
+    var elemento=document.getElementById('descargaPpts');
+    
+    elemento.style.display = 'none';
+}
+
+function ocultarCursos(){
+    var elemento=document.getElementById('cursos');
+    
+    elemento.style.display = 'none';
 }
 
