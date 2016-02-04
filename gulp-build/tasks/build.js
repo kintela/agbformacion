@@ -92,7 +92,7 @@ gulp.task("build:scripts", function () {
 });
 
 gulp.task("build:index", ["build:dependencies", "build:css", "build:app", "build:html","build:scripts"], function () {
-   return gulp.src("index3.html")
+   return gulp.src("index.html")
         .pipe($.plumber())
         .pipe($.inject(gulp.src([paths.dest.libs + "**/*.js", paths.dest.js + "**/*.js"], { read: false }), { relative: true }))
         .pipe($.inject(gulp.src(paths.dest.css + "**/*.css", { read: false }), { relative: true }))
