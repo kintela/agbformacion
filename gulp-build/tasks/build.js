@@ -50,7 +50,15 @@ gulp.task("build:dependencies:fonts", function () {
 
     return gulp.src('./bower.json')
               .pipe($.plumber())
-              .pipe($.mainBowerFiles())
+                .pipe($.mainBowerFiles({
+                  overrides: {
+                      bootstrap: {
+                          main: [
+                             "./fonts/*"
+                          ]
+                      }
+                  }
+              }))
               .pipe(filterFonts)
               .pipe($.flatten())
               .pipe(gulp.dest(paths.dest.fonts));
