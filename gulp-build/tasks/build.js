@@ -9,10 +9,10 @@ gulp.task("build:dependencies:js", function () {
               .pipe($.plumber())
               .pipe($.mainBowerFiles())
               .pipe(filterJS)
-              .pipe($.sourcemaps.init())
-              .pipe($.concat("libs.js"))
-              .pipe($.uglify())
-              .pipe($.sourcemaps.write("maps"))              
+              //.pipe($.sourcemaps.init())
+              //.pipe($.concat("libs.js"))
+              //.pipe($.uglify())
+              //.pipe($.sourcemaps.write("maps"))              
               .pipe(gulp.dest(paths.dest.libs));
 });
 
@@ -31,10 +31,10 @@ gulp.task("build:dependencies:css", function () {
                   }
               }))
               .pipe(filterCSS)
-              .pipe($.sourcemaps.init())
-              .pipe($.concat("libs.css"))
-              .pipe($.cssmin())
-              .pipe($.sourcemaps.write("maps"))
+              //.pipe($.sourcemaps.init())
+              //.pipe($.concat("libs.css"))
+              //.pipe($.cssmin())
+              //.pipe($.sourcemaps.write("maps"))
               .pipe(gulp.dest(paths.dest.css));
 });
 
