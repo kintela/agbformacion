@@ -18,7 +18,7 @@ paths.dest.multimedia = paths.dest.root + "multimedia/";
 paths.src.css = paths.src.root + "css/**/*.css";
 paths.src.js = paths.src.root + "app/**/*.js";
 paths.src.html = paths.src.root + "app/**/*.html";
-paths.src.img = paths.src.root + "img/**/*.jpg";
+paths.src.img = paths.src.root + "img/**/*";
 paths.src.flash = paths.src.root + "multimedia/flash/**/*.swf";
 paths.src.script = paths.src.root + "scripts/**/*.js";
 

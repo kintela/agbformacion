@@ -1,5 +1,6 @@
 var gulp = require("gulp");
 var paths = require("../paths.js");
+var $ = require("../plugins.js");
 
 gulp.task("watch", function () {
     gulp.watch([
@@ -8,5 +9,7 @@ gulp.task("watch", function () {
             paths.src.root + "bower_components/**/*.*",            
             "!" + paths.dest.root + "**/*.*"
         ],
-        ["build"]);
+        ["build"]);       
+   
 });
+

@@ -99,12 +99,18 @@ gulp.task("build:scripts", function () {
             .pipe(gulp.dest(paths.dest.js + "/scripts"));
 });
 
-gulp.task("build:index", ["build:dependencies", "build:css", "build:app", "build:html","build:scripts"], function () {
-   return gulp.src("index.html")
-        .pipe($.plumber())
-        .pipe($.inject(gulp.src([paths.dest.libs + "**/*.js", paths.dest.js + "**/*.js"], { read: false }), { relative: true }))
-        .pipe($.inject(gulp.src(paths.dest.css + "**/*.css", { read: false }), { relative: true }))
-        .pipe(gulp.dest(paths.dest.root));
+gulp.task("build:copyIndex", function () {     
+    return gulp.src("index.html")
+            .pipe($.plumber())
+            .pipe(gulp.dest((paths.dest.root)));
+});
+
+gulp.task("build:index", ["build:copyIndex","build:css", "build:app", "build:html","build:scripts"], function () {
+    return gulp.src("./wwwroot/index.html")   
+               .pipe($.plumber())           
+               .pipe($.inject(gulp.src([paths.dest.libs + "**/*.js", paths.dest.js + "**/*.js"], { read: false }), { relative: true }))
+               .pipe($.inject(gulp.src(paths.dest.css + "**/*.css", { read: false }), { relative: true }))
+               .pipe(gulp.dest(paths.dest.root));
 });
 
 gulp.task("build:img", function () {
@@ -125,5 +131,14 @@ gulp.task("build:flash", function () {
             .pipe(gulp.dest(paths.dest.flash));
 });
 
+gulp.task('build', function(callback) {
+  $.runSequence(//'clean',
+              'build:dependencies',
+              'build:index',
+              'build:img',
+              'build:flash',
+              callback);
+});
 
-gulp.task("build", ["build:dependencies", "build:css", "build:app", "build:html","build:scripts", "build:index","build:img","build:flash"]);
+
+//gulp.task("build", ["build:dependencies", "build:index","build:img","build:flash"]);

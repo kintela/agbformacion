@@ -9,4 +9,6 @@ var $ = loadPlugins({
 
 $.del = require("del");
 
+$.runSequence=require("run-sequence");
+
 module.exports = $;
