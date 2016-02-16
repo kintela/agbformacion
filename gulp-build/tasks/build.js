@@ -132,7 +132,7 @@ gulp.task("build:flash", function () {
 });
 
 gulp.task('build', function(callback) {
-  $.runSequence(//'clean',
+  $.runSequence('clean',
               'build:dependencies',
               'build:index',
               'build:img',
