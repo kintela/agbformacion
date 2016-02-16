@@ -1,29 +1,18 @@
-<div id="navegacion" ng-controller="headerController">
-    <!--<ul> 
+<div id="navegacion" ng-controller="DropdownController">        
+       <ul> 
         <li id="inicio"><a href="#/" class="actual">Quiénes somos</a></li> 
-        <li id="ofrecemos" class="dropdown">
-            <a href="#/que-ofrecemos" class="dropdown-toogle" data-toogle="dropdown">Qué ofrecemos<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">formacion continua privada</a></li>
-                <li><a href="#">formacion continua subvencionada</a></li>
-            </ul>
-        </li>                     
-        <li id="clientes"><a href="#/clientes">Clientes</a></li> 
-        <li id="equipo"><a href="#/equipo">Equipo</a></li>
-        <li id="alianzas"><a href="#/alianzas">Alianzas</a></li>
-        <li id="trabajo"><a href="#/bolsa-trabajo">Bolsa de Trabajo</a></li>
-        <li id="contacto"><a href="#/contacto">Contacto</a></li>
-    </ul>-->
-    <ul> 
-        <li id="inicio"><a href="#/" class="actual">Quiénes somos</a></li> 
-        <li id="ofrecemos" on-toogle="toogled(open)">
-            <a href="#/que-ofrecemos" uib-dropdown-toggle>Qué ofrecemos<span class="caret"></span></a>
-            <ul uib-dropdown-menu aria-labelledby="simple-dropdown">
-                <li ng-repeat="choice in items">
-                    <a href>{{choice}}</a>
-                </li>
-            </ul>
+        <li id="ofrecemos">
+            <div class="btn-group" uib-dropdown>
+                <button id="split-button" type="button" class="btn btn-danger" ng-click="mostrar()">Qué Ofrecemos</button>
+                <button type="button" class="btn btn-danger" uib-dropdown-toggle>
+                    <span class="caret"></span>
+                    <span class="sr-only">Split button!</span>
+                </button>
+                <ul uib-dropdown-menu role="menu" aria-labelledby="split-button">
+                    <li role="menuitem"><a href="#">Formación Continua Subvencionada</a></li>
+                    <li role="menuitem"><a href="#">Formación Continua Privada</a></li>
+                </ul>
+            </div>
         </li>                     
         <li id="clientes"><a href="#/clientes">Clientes</a></li> 
         <li id="equipo"><a href="#/equipo">Equipo</a></li>

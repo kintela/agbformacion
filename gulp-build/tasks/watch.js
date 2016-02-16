@@ -6,7 +6,8 @@ gulp.task("watch", function () {
     gulp.watch([
             paths.src.root + "index.html",
             paths.src.root + "app/**/*.*",
-            paths.src.root + "bower_components/**/*.*",            
+            paths.src.root + "app/**/*.*",
+            paths.src.root + "css/**/*.*",            
             "!" + paths.dest.root + "**/*.*"
         ],
         ["build"]);       
