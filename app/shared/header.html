@@ -1,5 +1,5 @@
-<div id="navegacion">
-    <ul> 
+<div id="navegacion" ng-controller="headerController">
+    <!--<ul> 
         <li id="inicio"><a href="#/" class="actual">Quiénes somos</a></li> 
         <li id="ofrecemos" class="dropdown">
             <a href="#/que-ofrecemos" class="dropdown-toogle" data-toogle="dropdown">Qué ofrecemos<span class="caret"></span>
@@ -14,5 +14,22 @@
         <li id="alianzas"><a href="#/alianzas">Alianzas</a></li>
         <li id="trabajo"><a href="#/bolsa-trabajo">Bolsa de Trabajo</a></li>
         <li id="contacto"><a href="#/contacto">Contacto</a></li>
+    </ul>-->
+    <ul> 
+        <li id="inicio"><a href="#/" class="actual">Quiénes somos</a></li> 
+        <li id="ofrecemos" on-toogle="toogled(open)">
+            <a href="#/que-ofrecemos" uib-dropdown-toggle>Qué ofrecemos<span class="caret"></span></a>
+            <ul uib-dropdown-menu aria-labelledby="simple-dropdown">
+                <li ng-repeat="choice in items">
+                    <a href>{{choice}}</a>
+                </li>
+            </ul>
+        </li>                     
+        <li id="clientes"><a href="#/clientes">Clientes</a></li> 
+        <li id="equipo"><a href="#/equipo">Equipo</a></li>
+        <li id="alianzas"><a href="#/alianzas">Alianzas</a></li>
+        <li id="trabajo"><a href="#/bolsa-trabajo">Bolsa de Trabajo</a></li>
+        <li id="contacto"><a href="#/contacto">Contacto</a></li>
     </ul> 
+    
 </div>
