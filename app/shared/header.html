@@ -1,24 +1,27 @@
-<div id="navegacion" ng-controller="DropdownController">        
-       <ul> 
-        <li id="inicio"><a href="#/" class="actual">Quiénes somos</a></li> 
-        <li id="ofrecemos">
-            <div class="btn-group" uib-dropdown>
-                <button id="split-button" type="button" class="btn btn-danger" ng-click="mostrar()">Qué Ofrecemos</button>
-                <button type="button" class="btn btn-danger" uib-dropdown-toggle>
-                    <span class="caret"></span>
-                    <span class="sr-only">Split button!</span>
-                </button>
-                <ul uib-dropdown-menu role="menu" aria-labelledby="split-button">
-                    <li role="menuitem"><a href="#">Formación Continua Subvencionada</a></li>
-                    <li role="menuitem"><a href="#">Formación Continua Privada</a></li>
-                </ul>
-            </div>
-        </li>                     
-        <li id="clientes"><a href="#/clientes">Clientes</a></li> 
-        <li id="equipo"><a href="#/equipo">Equipo</a></li>
-        <li id="alianzas"><a href="#/alianzas">Alianzas</a></li>
-        <li id="trabajo"><a href="#/bolsa-trabajo">Bolsa de Trabajo</a></li>
-        <li id="contacto"><a href="#/contacto">Contacto</a></li>
-    </ul> 
-    
-</div>
+<header>
+    <nav>
+        <div id="navegacion" ng-controller="DropdownController">        
+            <ul> 
+                <li id="inicio"><a href="#/" class="actual">Quiénes somos</a></li> 
+                <li id="ofrecemos">
+                    <div class="btn-group" uib-dropdown>
+                        <button id="split-button" type="button" class="btn btn-danger" ng-click="mostrar()">Qué Ofrecemos</button>
+                        <button type="button" class="btn btn-danger" uib-dropdown-toggle>
+                            <span class="caret"></span>
+                            <span class="sr-only">Split button!</span>
+                        </button>
+                        <ul uib-dropdown-menu role="menu" aria-labelledby="split-button">
+                            <li role="menuitem"><a href="#">Formación Continua Subvencionada</a></li>
+                            <li role="menuitem"><a href="#">Formación Continua Privada</a></li>
+                        </ul>
+                    </div>
+                </li>                     
+                <li id="clientes"><a href="#/clientes">Clientes</a></li> 
+                <li id="equipo"><a href="#/equipo">Equipo</a></li>
+                <li id="alianzas"><a href="#/alianzas">Alianzas</a></li>
+                <li id="trabajo"><a href="#/bolsa-trabajo">Bolsa de Trabajo</a></li>
+                <li id="contacto"><a href="#/contacto">Contacto</a></li>
+            </ul>     
+        </div>  
+    </nav>
+</header>         

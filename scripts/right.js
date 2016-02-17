@@ -1,11 +1,11 @@
-function mostrar(){
-    var elemento=document.getElementById('descargaPpts');
+function mostrarRelax(){
+    var elemento=document.getElementById('relax');
     
     if(elemento.style.display=="none"){
-        document.getElementById('descargaPpts').style.display = 'block';
+        document.getElementById('relax').style.display = 'block';
     }
     else{
-        document.getElementById('descargaPpts').style.display = 'none';
+        document.getElementById('relax').style.display = 'none';
     }
 }
 
