@@ -13,7 +13,16 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
         .when('/risoterapia-visor-fotos', {
             templateUrl: 'app/components/risoterapia/visor-fotos.html',
             title: 'risoterapia-visor-fotos'
+        })     
+        .when('/risoterapia-en-organizaciones', {
+            templateUrl: 'app/components/risoterapia/risoterapia.html#Risoterapia-en-organizaciones',
+            title: 'risoterapia-en-organizaciones'
         })             
+        .when('/risoterapia-que-es', {
+            templateUrl: 'app/components/risoterapia/risoterapia.html#Risoterapia-que-es',
+            title: 'risoterapia-que-es'
+        })             
+                
          .when('/que-ofrecemos', {
             templateUrl: 'app/components/que-ofrecemos/que-ofrecemos.html',
             title: 'que-ofrecemos'
