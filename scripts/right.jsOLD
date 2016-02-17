@@ -9,7 +9,7 @@ function mostrarRelax(){
     }
 }
 
-function mostrarRisoterapia(){
+/*function mostrarRisoterapia(){
     var elemento=document.getElementById('subMenusRisoterapia');
     
     if(elemento.style.display=="none"){
@@ -29,7 +29,7 @@ function mostrarOutdoor(){
     else{
         document.getElementById('subMenusOutdoor').style.display = 'none';
     }
-}
+}*/
 
 function mostrarCursos(){
     var elemento=document.getElementById('cursos');
