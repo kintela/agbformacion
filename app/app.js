@@ -14,6 +14,14 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'app/components/que-ofrecemos/que-ofrecemos.html',
             title: 'Inicio'
         })   
+        .when('/formacion-continua-privada', {
+            templateUrl: 'app/components/que-ofrecemos/formacion-continua-privada.html',
+            title: 'Inicio'
+        })  
+         .when('/formacion-continua-subvencionada', {
+            templateUrl: 'app/components/que-ofrecemos/formacion-continua-subvencionada.html',
+            title: 'Inicio'
+        })    
         .when('/clientes', {
             templateUrl: 'app/components/clientes/clientes.html',
             title: 'Inicio'
