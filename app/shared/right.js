@@ -1,5 +1,5 @@
 angular.module('right', [])        
-       .controller('rightController', ['$scope', '$location', function ($scope, $location) {
+       .controller('rightController', ['$scope', '$location','$anchorScroll', function ($scope, $location,$anchorScroll) {
 
            $scope.mostrarRisoterapiaOLD = function (project) {
                //$location.path('/proyecto/' + project.node.Codigo + '/' + project.node.Descripcion);
@@ -27,5 +27,11 @@ angular.module('right', [])
                     document.getElementById('subMenusOutdoor').style.display = 'none';
                 }
             };
+            
+            $scope.goto = function(name) {
+                $location.hash(name);
+                $anchorScroll();
+      };
+
 
         }]);
