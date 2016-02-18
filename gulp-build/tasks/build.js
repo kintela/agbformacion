@@ -131,11 +131,18 @@ gulp.task("build:flash", function () {
             .pipe(gulp.dest(paths.dest.flash));
 });
 
+gulp.task("build:video", function () {     
+    return gulp.src(paths.src.video)
+            .pipe($.plumber())
+            .pipe(gulp.dest(paths.dest.video));
+});
+
 gulp.task('build', function(callback) {
   $.runSequence('build:dependencies',
               'build:index',
               'build:img',
               'build:flash',
+              'build:video',
               callback);
 });
 
