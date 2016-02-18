@@ -11,7 +11,7 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
             title: 'risoterapia'
         })   
         .when('/risoterapia-visor-fotos', {
-            templateUrl: 'app/components/risoterapia/visor-fotos.html',
+            templateUrl: 'app/components/risoterapia/visor-fotos2.html',
             title: 'risoterapia-visor-fotos'
         })     
         .when('/risoterapia-en-organizaciones', {
