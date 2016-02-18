@@ -24,7 +24,7 @@ p {
 /* ---------- add your code below ---------- */
 
 #cabecera {
-		width: 1035px;
+		width: 1100px;
 		height: 82px;
 		background:#575759;
         margin: 0 auto;
@@ -129,7 +129,7 @@ p {
 
 
 #contenido {
-		width: 1035px;
+		width: 1100px;
 		height: 710px;
 		margin: 0 auto;
 }
@@ -149,7 +149,7 @@ p {
 }
 
 #centro {
-		width: 424px;
+		width: 450px;
 		height: 710px;
 		margin: 0 auto;
 		background-color: #FFF;
@@ -162,7 +162,7 @@ p {
 }
 	
 #centroContenido {
-	width: 424px;
+	width: 450px;
 	height: 689px;
 	overflow: auto;
 }
@@ -172,7 +172,7 @@ p {
 	height: 200px;
 }
 #dcha {
-		width: 211px;
+		width: 250px;
 		height: 710px;
 		background: url(/img/top_dcha.gif) 0 0 repeat-x;
 		background-color: #EFF0BC;
@@ -181,7 +181,7 @@ p {
 }
 
 #pie {
-	width: 1035px;
+	width: 1100px;
 	height: 65px;
 	margin: 0 auto;
 	background: #2B342F;
