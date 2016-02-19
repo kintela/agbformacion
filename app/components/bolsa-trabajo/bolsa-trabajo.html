@@ -17,27 +17,27 @@
             <form>
                 <div>
                     <span>Nombre</span>
-                    <input type="text" id="formNombre"></input>    
+                    <input type="text" ng-model="usuario.nombre"></input>    
                 </div>                        
                 <div>
                     <span>Apellidos</span>
-                    <input type="text" id="formApellidos"></input>    
+                    <input type="text" ng-model="usuario.apellidos"></input>    
                 </div>                        
                 <div>
                     <span>Teléfono</span>
-                    <input type="tel" id="formTelefono"></input>    
-                </div>                        
+                    <input type="tel" ng-model="usuario.telefono"></input>    
+                </div>  
                 <div>
-                    <span>Email</span>
-                    <input type="email" id="formEmail"></input>    
-                </div>
+                    <span>Observaciones</span>
+                    <textarea placeholder="Cuentanos..." ng-model="usuario.observaciones"></textarea> 
+                </div>                                                              
                 <div>
                     <span>Selecciona archivo/s</span>
-                    <input type="file" id="formFile" multiple name="files[]">
+                    <input type="file" name="fileIput" ng-model="usuario.curri"></input>
                     <output id="list"></output>
                 </div>
                 <div>
-                    <button ng-click="sendMail('kintela','roberto.quintela@gmail.com','curri','prueba de envio de curris')" class="btn btn-primary">Enviar</button>                    
+                    <button ng-click="sendMail(usuario)" class="btn btn-primary">Enviar</button>                    
                 </div>
             </form>
         </div>				

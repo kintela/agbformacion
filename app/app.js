@@ -25,11 +25,11 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
                 
          .when('/que-ofrecemos', {
             templateUrl: 'app/components/que-ofrecemos/que-ofrecemos.html',
-            title: 'que-ofrecemo'
+            title: 'que-ofrecemos'
         })   
         .when('/formacion-continua-privada', {
             templateUrl: 'app/components/que-ofrecemos/formacion-continua-privada.html',
-            title: 'formacion-continua-privad'
+            title: 'formacion-continua-privada'
         })  
          .when('/formacion-continua-subvencionada', {
             templateUrl: 'app/components/que-ofrecemos/formacion-continua-subvencionada.html',
