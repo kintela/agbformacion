@@ -1,20 +1,24 @@
 angular.module('bolsaTrabajo', [])        
-       .controller('BolsaTrabajoController', ['$scope','$log', function ($scope,$log) {
+       .controller('bolsaTrabajoController', ['$scope','$log', function ($scope,$log) {
            
-        var mandrill = require('node-mandrill')('ohEjhPgs1DjrfDCwfRYliQ'); 
-        
-        $scope.sendMail=function(_name, _email, _subject,_message){
-            mandrill('/messages/send',{
-                message:{
-                    to: [{email:_email, name:_name}],
-                    from_email: 'info@innovup.cc',
-                    subject: _subject,
-                    text: _message
-                }
-            },function(error,response){
-                if(error) $log(error);
-                else $log(response);
-            });
+        var m=new mandrill.Mandrill('ohEjhPgs1DjrfDCwfRYliQ');
+
+        $scope.sendMail=function sendMail(){                       
+            var params = {
+            "message": {
+                "from_email":"info@innovup.cc",
+                "to":[{"email":"roberto.quintela@gmail.com"}],
+                "subject": "Sending a text email from the Mandrill API",
+                "text": "I'm learning the Mandrill API at Codecademy."
+            }
+        };
+
+            
+            m.messages.send(params,function (res) {
+                $log.log(res);
+            },function (err) {
+                $log.log(err);
+            })
         };
         
         }]);

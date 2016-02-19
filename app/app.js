@@ -1,4 +1,4 @@
-var agbApp = angular.module('app', ['ngRoute', 'ngAnimate','right','header']);
+var agbApp = angular.module('app', ['ngRoute', 'ngAnimate','right','header','bolsaTrabajo']);
 
 agbApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
@@ -25,7 +25,7 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
                 
          .when('/que-ofrecemos', {
             templateUrl: 'app/components/que-ofrecemos/que-ofrecemos.html',
-            title: 'que-ofrecemos'
+            title: 'que-ofrecemo'
         })   
         .when('/formacion-continua-privada', {
             templateUrl: 'app/components/que-ofrecemos/formacion-continua-privada.html',

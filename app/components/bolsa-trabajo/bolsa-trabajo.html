@@ -5,7 +5,7 @@
     <p class="autor"><img src="../img/guion.gif" alt="" width="10" height="9" />Plat&oacute;n</p>
     <img src="../img/fotos/bolsa-trabajo.jpg" width="400" height="246" alt="agb-formacion" />
 </div>
-<div id="centro">
+<div id="centro" ng-controller="bolsaTrabajoController">
     <div id="centroContenido">
         <p> 
         ¿Tienes experiencia en formación dirigida a profesionales en activo?</p>
@@ -37,7 +37,7 @@
                     <output id="list"></output>
                 </div>
                 <div>
-                    <input type="submit" onclick="sendMail()">
+                    <button ng-click="sendMail('kintela','roberto.quintela@gmail.com','curri','prueba de envio de curris')" class="btn btn-primary">Enviar</button>                    
                 </div>
             </form>
         </div>				
