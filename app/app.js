@@ -73,7 +73,7 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
         }) 
         .when('/outdoor-training-visor-fotos', {
             templateUrl: 'app/components/outdoor-training/visor-fotos.html',
-            title: 'outdoor-visor-fotos'
+            title: 'outdoor-visor-foto'
         }) 
         .when('/outdoor-training-video', {
             templateUrl: 'app/components/outdoor-training/video.html',
