@@ -165,6 +165,8 @@ p {
 	width: 450px;
 	height: 689px;
 	overflow: auto;
+    background: url(/img/top.gif) repeat-x;
+    padding-top: 25px;
 }
 
 #Formulario {
@@ -187,6 +189,12 @@ p {
 	background: #2B342F;
 	text-align: center;
 	padding-top: 10px;
+    overflow: hidden;
+	height: auto;
+}
+
+#pie a:hover {
+    color: #B74149;
 }
 
 #logo {
@@ -217,10 +225,6 @@ p {
 
 .fotoIzda {
 		padding: 0;
-}
-
-.foto {
-			
 }
 
 .borde {
@@ -295,9 +299,12 @@ a:link, a:focus, a:active , a:visited{
 		color: #FF5800;
 		text-decoration: underline;
 }
-a:hover  {
-		color: #B74149;
+#dcha a:hover, #dcha a:focus, #dcha a:active {
+    color: #B74149;
 }
+/*a:hover  {
+		color: #B74149;
+}*/
 
 #dcha .enlaces a:link, a:visited, a:focus, a:active {
 /* 	color: #604943; */
@@ -316,6 +323,8 @@ a:hover  {
 	color: #FF5800;
 	margin: 5px 15px 0px;
 	display:block;
+	text-align: left;
+	padding-left: 12px;    
 }
 .EtiquetaMenu{
 	color: #000000;
@@ -437,6 +446,41 @@ a#nextLink{
 
 #nextLink:hover{
 	background-position:bottom right;
+}
+
+#ofrecemos .btn-group.dropdown {
+    margin-top: -2px;}
+#ofrecemos button {
+	background: #575759;
+	border: none;
+	box-shadow: none;
+	color: #EFF0BC;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15.4px;
+	border-radius: 0;}
+#ofrecemos button:hover {
+    color: #FF5800;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #fff;
+}
+
+#ofrecemos button + button {
+	padding-left: 0;
+}
+#ofrecemos button + button:hover {
+	border-bottom: none;
+}
+
+#ofrecemos ul.dropdown-menu li {
+	padding: 0;
+	border: 0;
+}
+#ofrecemos ul.dropdown-menu li a {
+	color: #B74149;}
+#ofrecemos ul.dropdown-menu li a:hover {
+	border: none;
+	color: #FF5800;
 }
 
 
