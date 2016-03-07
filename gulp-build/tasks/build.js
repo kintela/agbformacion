@@ -117,7 +117,8 @@ gulp.task("build:img", function () {
      var filterImgs = $.filter([
                         "**/*.jpg",
                         "**/*.png",
-                        "**/*.gif"                                   
+                        "**/*.gif",
+                        "**/*.js"                                   
     ]);
     return gulp.src(paths.src.img)
             .pipe($.plumber())
