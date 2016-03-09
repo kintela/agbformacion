@@ -483,4 +483,18 @@ a#nextLink{
 	color: #FF5800;
 }
 
+.cursos .dropdown-menu {
+	left: -108px;
+}
+
+.btn-group.dropdown button {
+    background: #B74149;
+    border: none;
+}
+
+.btn-group.dropdown.open button:hover,
+.btn-group.dropdown.open button:focus {
+	background: #72282d;
+}
+
 
