@@ -137,7 +137,7 @@ p {
 #izda {
 		width: 400px;
 		height: 710px;
-		background: url(/img/top.gif) 0 0 repeat-x;
+		background: url(../img/top.gif) 0 0 repeat-x;
 		background-color: #FFF;
 		float: left;
 }
@@ -158,14 +158,14 @@ p {
 #centroArriba {
 	width: 424px;
 	height: 21px;
-	background: url(img/top.gif) 0 0 repeat-x;
+	background: url(../img/top.gif) 0 0 repeat-x;
 }
 	
 #centroContenido {
 	width: 450px;
 	height: 689px;
 	overflow: auto;
-    background: url(/img/top.gif) repeat-x;
+    background: url(../img/top.gif) repeat-x;
     padding-top: 25px;
 }
 
@@ -176,7 +176,7 @@ p {
 #dcha {
 		width: 250px;
 		height: 710px;
-		background: url(/img/top_dcha.gif) 0 0 repeat-x;
+		background: url(../img/top_dcha.gif) 0 0 repeat-x;
 		background-color: #EFF0BC;
 		float: left;
 		overflow: auto;
@@ -425,7 +425,7 @@ table#alianzastabla a img {
 	overflow:hidden;
 	width:36px;
 	height:37px;
-	background:url('/img/common/arrows.png') no-repeat;
+	background:url('../img/common/arrows.png') no-repeat;
 	position:absolute;
 	top:50%;
 	margin-top:-21px;
