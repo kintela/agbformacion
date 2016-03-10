@@ -506,4 +506,9 @@ left.carousel-control.item.text-center.ng-isolate-scope {
     margin-right: 15px;
 }
 
+.carousel-control .icon-prev,
+.carousel-control .icon-next{
+    font-size: 100px;
+}
+
 
