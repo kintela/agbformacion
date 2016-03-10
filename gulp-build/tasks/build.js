@@ -138,12 +138,19 @@ gulp.task("build:video", function () {
             .pipe(gulp.dest(paths.dest.video));
 });
 
+gulp.task("build:mp3", function () {     
+    return gulp.src(paths.src.mp3)
+            .pipe($.plumber())
+            .pipe(gulp.dest(paths.dest.multimedia));
+});
+
 gulp.task('build', function(callback) {
   $.runSequence('build:dependencies',
               'build:index',
               'build:img',
               'build:flash',
               'build:video',
+              'build:mp3',
               callback);
 });
 

@@ -23,5 +23,6 @@ paths.src.img = paths.src.root + "img/**/*";
 paths.src.flash = paths.src.root + "multimedia/flash/**/*.swf";
 paths.src.video = paths.src.root + "multimedia/videos/**/*.mp4";
 paths.src.script = paths.src.root + "scripts/**/*.js";
+paths.src.mp3 = paths.src.root + "multimedia/**/*.mp3";
 
 module.exports = paths;
