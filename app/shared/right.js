@@ -29,6 +29,16 @@ angular.module('right', [])
             };
             
             $scope.goto = function(name) {
+                var isOutDoor = name.indexOf('Outdoor') > -1;
+                
+                if(isOutDoor)
+                {
+                  $location.path("/outdoor-training");  
+                }
+                else
+                {
+                    $location.path("/risoterapia");
+                }                
                 $location.hash(name);
                 $anchorScroll();
       };
