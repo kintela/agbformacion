@@ -302,9 +302,9 @@ a:link, a:focus, a:active , a:visited{
 #dcha a:hover, #dcha a:focus, #dcha a:active {
     color: #B74149;
 }
-/*a:hover  {
-		color: #B74149;
-}*/
+a:focus, a:hover {
+    color: #B74149;
+}
 
 #dcha .enlaces a:link, a:visited, a:focus, a:active {
 /* 	color: #604943; */
@@ -507,7 +507,7 @@ a#nextLink{
 }
 
 .carousel-control .icon-next, .carousel-control .icon-prev {
-	margin-top: -10px;
-	font-size: 80px;
+	margin-top: -10px !important;
+	font-size: 100px !important;
 }
 
