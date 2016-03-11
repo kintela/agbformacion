@@ -499,8 +499,8 @@ a#nextLink{
 
 .carousel-inner { margin-left: 15px; }
 
-left.carousel-control.item.text-center.ng-isolate-scope {
-    margin-left: 15px;
+.left.carousel-control.item.text-center.ng-isolate-scope {
+	margin-left:15px;
 }
 .right.carousel-control.item.text-center.ng-isolate-scope {
     margin-right: 15px;
