@@ -506,9 +506,8 @@ a#nextLink{
     margin-right: 15px;
 }
 
-.carousel-control .icon-prev,
-.carousel-control .icon-next{
-    font-size: 100px;
+.carousel-control .icon-next, .carousel-control .icon-prev {
+	margin-top: -10px;
+	font-size: 80px;
 }
-
 
