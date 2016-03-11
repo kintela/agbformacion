@@ -511,3 +511,8 @@ a#nextLink{
 	font-size: 100px !important;
 }
 
+.lista li {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
