@@ -1,4 +1,4 @@
-var agbApp = angular.module('app', ['ngRoute', 'ngAnimate','right','header','carousel']);
+var agbApp = angular.module('app', ['ngRoute', 'ngAnimate','right','header','carouselRisoterapia','carouselOutdoor']);
 
 agbApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
@@ -72,7 +72,7 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
             title: 'outdoor-training'
         }) 
         .when('/outdoor-training-visor-fotos', {
-            templateUrl: 'app/components/outdoor-training/visor-fotos.html',
+            templateUrl: 'app/components/outdoor-training/visor-fotos-2.html',
             title: 'outdoor-visor-foto'
         }) 
         .when('/outdoor-training-video', {

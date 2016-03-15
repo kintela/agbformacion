@@ -1,5 +1,5 @@
- angular.module('carousel', ['ui.bootstrap'])        
-       .controller('carouselController', ['$scope', function ($scope) {   
+ angular.module('carouselRisoterapia', ['ui.bootstrap'])        
+       .controller('carouselRisoterapiaController', ['$scope', function ($scope) {   
                                                                 
         $scope.myInterval = 2000;
         $scope.noWrapSlides = false;
@@ -352,8 +352,5 @@
             text:'Hegoalde 2013',
             id:currIndex++
         });        
-
-
-
 
         }]);
