@@ -21,7 +21,7 @@ gulp.task("build:dependencies:css", function () {
 
     return gulp.src('./bower.json')
               .pipe($.plumber())
-               .pipe($.mainBowerFiles({
+              .pipe($.mainBowerFiles({
                   overrides: {
                       bootstrap: {
                           main: [
@@ -61,7 +61,8 @@ gulp.task("build:dependencies:fonts", function () {
               }))
               .pipe(filterFonts)
               .pipe($.flatten())
-              .pipe(gulp.dest(paths.dest.fonts));
+              .pipe(gulp.dest(paths.dest.css + "/bootstrap/dist/fonts"));
+              //.pipe(gulp.dest(paths.dest.fonts));
 });
 
 gulp.task("build:dependencies", ["build:dependencies:js", "build:dependencies:css", "build:dependencies:fonts"]);
