@@ -13,12 +13,12 @@
 <div id="centro">
     <div id="centroContenido">
         <div ng-controller="carouselController">
-            <div style="height: 300px">
+            <div style="width: 450px">
                 <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                     <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
                         <img ng-src="{{slide.image}}" style="margin:auto;">
                         <div class="carousel-caption">
-                        <p>{{slide.text}}</p>
+                            <p class="carousel-caption">{{slide.text}}</p>
                         </div>
                     </uib-slide>
                 </uib-carousel>
