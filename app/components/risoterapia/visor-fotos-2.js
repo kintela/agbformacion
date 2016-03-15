@@ -37,5 +37,23 @@
             id:currIndex++
         });        
 
+        slides.push({
+            image: 'img/fotos/risoterapia/outdoor-training sin agb-outdoor-training-bilbao-..estiramientos.jpg',
+            text:'Estiramientos',
+            id:currIndex++
+        });        
+
+        slides.push({
+            image: 'img/fotos/risoterapia/outdoor-training sin agb-outdoor-training-bilbao-..estrella-de-mar.jpg',
+            text:'Estrella de mar',
+            id:currIndex++
+        });        
+
+        slides.push({
+            image: 'img/fotos/risoterapia/outdoor-training sin agb-outdoor-training-bilbao-..globos-1.jpg',
+            text:'Globos',
+            id:currIndex++
+        });        
+
 
         }]);
