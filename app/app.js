@@ -1,4 +1,4 @@
-var agbApp = angular.module('app', ['ngRoute', 'ngAnimate','right','header','bolsaTrabajo']);
+var agbApp = angular.module('app', ['ngRoute', 'ngAnimate','right','header','carousel']);
 
 agbApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
@@ -11,7 +11,7 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
             title: 'risoterapia'
         })   
         .when('/risoterapia-visor-fotos', {
-            templateUrl: 'app/components/risoterapia/visor-fotos.html',
+            templateUrl: 'app/components/risoterapia/visor-fotos-2.html',
             title: 'risoterapia-visor-fotos'
         })     
         .when('/risoterapia-en-organizaciones', {
