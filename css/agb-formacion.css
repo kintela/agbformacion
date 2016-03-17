@@ -516,3 +516,30 @@ a#nextLink{
     margin-top: 8px;
 }
 
+.carousel-caption {
+	bottom: 55px !important;
+	width: 450px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	font-size: 50px !important;
+}
+
+.carousel-control.left {
+	margin-left: 30px;
+}
+
+.carousel-inner {
+	margin: 0;
+}
+
+.carousel-control.left {
+	margin-left: 15px;
+}
+
+.carousel-control.right {
+	margin-right: 15px;
+}
+
+
+
