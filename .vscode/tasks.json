@@ -1,0 +1,29 @@
+{
+	"version": "0.1.0",
+	"command": "gulp",
+	// The command is a shell script
+	"isShellCommand": true,
+	"args": [],
+	"tasks":[
+        {
+            "taskName": "clean",
+            "isBuildCommand": true,
+            "showOutput": "always"
+        },
+        {
+            "taskName": "build",
+            "isBuildCommand": true,
+            "showOutput": "always"
+        },
+        {
+            "taskName": "serve",
+            "isBuildCommand": true,
+            "showOutput": "always"
+        },
+        {
+            "taskName": "watch",
+            "isBuildCommand": true,
+            "showOutput": "always"
+        }
+    ]
+}

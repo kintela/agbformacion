@@ -1,0 +1,25 @@
+<div id="izda">
+    <img src="img/logo-agb-formacion.jpg" alt="logo agb formaci&oacute;n" width="400" height="179" id="logo" />
+    <p class="cita"></p>
+    <p class="cita"><img src="img/comillas_a.gif" alt="comillas" width="12" height="10" class="comillas" />Oigo
+    y olvido, veo y recuerdo, hago y APRENDO<img src="img/comillas_c.gif" alt="comillas" width="12" height="10" class="comillas" /></p>
+    <p class="cita">&nbsp;</p>
+    <p class="cita">&nbsp;</p>
+    <img src="img/fotos/outdoor-training.jpg" width="400" height="246" alt="agb-formacion" />
+</div>
+<div id="centro">
+    <div id="centroContenido">
+        <div ng-controller="carouselOutdoorController">
+            <div style="width: 450px">
+                <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                    <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                        <img ng-src="{{slide.image}}" style="margin:auto;">
+                        <div class="carousel-caption">
+                            <p class="carousel-caption">{{slide.text}}</p>
+                        </div>
+                    </uib-slide>
+                </uib-carousel>
+            </div>        
+    </div>  
+</div>
+

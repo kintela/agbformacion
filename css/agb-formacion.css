@@ -24,9 +24,10 @@ p {
 /* ---------- add your code below ---------- */
 
 #cabecera {
-		width: 1035px;
+		width: 1100px;
 		height: 82px;
 		background:#575759;
+        margin: 0 auto;
 		padding: 0;
 }
 
@@ -128,7 +129,7 @@ p {
 
 
 #contenido {
-		width: 1035px;
+		width: 1100px;
 		height: 710px;
 		margin: 0 auto;
 }
@@ -148,7 +149,7 @@ p {
 }
 
 #centro {
-		width: 424px;
+		width: 450px;
 		height: 710px;
 		margin: 0 auto;
 		background-color: #FFF;
@@ -161,9 +162,11 @@ p {
 }
 	
 #centroContenido {
-	width: 424px;
+	width: 450px;
 	height: 689px;
 	overflow: auto;
+    background: url(../img/top.gif) repeat-x;
+    padding-top: 25px;
 }
 
 #Formulario {
@@ -171,7 +174,7 @@ p {
 	height: 200px;
 }
 #dcha {
-		width: 211px;
+		width: 250px;
 		height: 710px;
 		background: url(../img/top_dcha.gif) 0 0 repeat-x;
 		background-color: #EFF0BC;
@@ -180,12 +183,18 @@ p {
 }
 
 #pie {
-	width: 1035px;
+	width: 1100px;
 	height: 65px;
 	margin: 0 auto;
 	background: #2B342F;
 	text-align: center;
 	padding-top: 10px;
+    overflow: hidden;
+	height: auto;
+}
+
+#pie a:hover {
+    color: #B74149;
 }
 
 #logo {
@@ -216,10 +225,6 @@ p {
 
 .fotoIzda {
 		padding: 0;
-}
-
-.foto {
-			
 }
 
 .borde {
@@ -294,8 +299,11 @@ a:link, a:focus, a:active , a:visited{
 		color: #FF5800;
 		text-decoration: underline;
 }
-a:hover  {
-		color: #B74149;
+#dcha a:hover, #dcha a:focus, #dcha a:active {
+    color: #B74149;
+}
+a:focus, a:hover {
+    color: #B74149;
 }
 
 #dcha .enlaces a:link, a:visited, a:focus, a:active {
@@ -315,6 +323,8 @@ a:hover  {
 	color: #FF5800;
 	margin: 5px 15px 0px;
 	display:block;
+	text-align: left;
+	padding-left: 12px;    
 }
 .EtiquetaMenu{
 	color: #000000;
@@ -368,4 +378,168 @@ table#alianzastabla a img {
 #oculto{
     display: none;
 }
+
+/*VISOR FOTOS*/
+#slideShowContainer{
+	width:510px;
+	height:510px;
+	position:relative;
+	margin:120px auto 50px;
+}
+
+#slideShow{
+	position:absolute;
+	height:490px;
+	width:490px;
+	background-color:#fff;
+	margin:10px 0 0 10px;
+	z-index:100;
+	
+	-moz-box-shadow:0 0 10px #111;
+	-webkit-box-shadow:0 0 10px #111;
+	box-shadow:0 0 10px #111;
+}
+
+#slideShow ul{
+	position:absolute;
+	top:15px;
+	right:15px;
+	bottom:15px;
+	left:15px;
+	list-style:none;
+	overflow:hidden;
+}
+
+#slideShow li{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#slideShowContainer > a{
+	border:none;
+	text-decoration:none;
+	text-indent:-99999px;
+	overflow:hidden;
+	width:36px;
+	height:37px;
+	background:url('../img/common/arrows.png') no-repeat;
+	position:absolute;
+	top:50%;
+	margin-top:-21px;
+}
+
+#previousLink{
+	left:-38px;
+}
+
+#previousLink:hover{
+	background-position:bottom left;
+}
+
+a#nextLink{
+	right:-38px;
+	background-position:top right;
+}
+
+#nextLink:hover{
+	background-position:bottom right;
+}
+
+#ofrecemos .btn-group.dropdown {
+    margin-top: -2px;}
+#ofrecemos button {
+	background: #575759;
+	border: none;
+	box-shadow: none;
+	color: #EFF0BC;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15.4px;
+	border-radius: 0;}
+#ofrecemos button:hover {
+    color: #FF5800;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #fff;
+}
+
+#ofrecemos button + button {
+	padding-left: 0;
+}
+#ofrecemos button + button:hover {
+	border-bottom: none;
+}
+
+#ofrecemos ul.dropdown-menu li {
+	padding: 0;
+	border: 0;
+}
+#ofrecemos ul.dropdown-menu li a {
+	color: #B74149;}
+#ofrecemos ul.dropdown-menu li a:hover {
+	border: none;
+	color: #FF5800;
+}
+
+.cursos .dropdown-menu {
+	left: -108px;
+}
+
+.btn-group.dropdown button {
+    background: #B74149;
+    border: none;
+}
+
+.btn-group.dropdown.open button:hover,
+.btn-group.dropdown.open button:focus {
+	background: #72282d;
+}
+
+.carousel-inner { margin-left: 15px; }
+
+.left.carousel-control.item.text-center.ng-isolate-scope {
+	margin-left:15px;
+}
+.right.carousel-control.item.text-center.ng-isolate-scope {
+    margin-right: 15px;
+}
+
+.carousel-control .icon-next, .carousel-control .icon-prev {
+	margin-top: -10px !important;
+	font-size: 100px !important;
+}
+
+.lista li {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.carousel-caption {
+	bottom: 55px !important;
+	width: 450px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	font-size: 50px !important;
+}
+
+.carousel-control.left {
+	margin-left: 30px;
+}
+
+.carousel-inner {
+	margin: 0;
+}
+
+.carousel-control.left {
+	margin-left: 15px;
+}
+
+.carousel-control.right {
+	margin-right: 15px;
+}
+
+
 
