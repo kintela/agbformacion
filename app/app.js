@@ -85,6 +85,11 @@ agbApp.config(['$routeProvider', function ($routeProvider) {
             title: 'crecimiento-personal'
         }) 
 
+        .when('/aviso-legal', {
+            templateUrl: 'app/components/legal/aviso-legal.html',
+            title: 'aviso-legal'
+        }) 
+
         .otherwise({
             redirectTo: '/'
         });
