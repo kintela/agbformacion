@@ -1,29 +1,47 @@
 {
-	"version": "0.1.0",
-	"command": "gulp",
-	// The command is a shell script
-	"isShellCommand": true,
+	"version": "2.0.0",
+    "command": "gulp",
 	"args": [],
 	"tasks":[
         {
-            "taskName": "clean",
-            "isBuildCommand": true,
-            "showOutput": "always"
+            "label": "clean",
+            "type": "gulp",
+            "task": "clean",
+            "problemMatcher": [],
+            "group": {
+                "_id": "build",
+                "isDefault": false
+            }
         },
         {
-            "taskName": "build",
-            "isBuildCommand": true,
-            "showOutput": "always"
+            "label": "build",
+            "type": "gulp",
+            "task": "build",
+            "problemMatcher": [],
+            "group": {
+                "_id": "build",
+                "isDefault": false
+            }
         },
         {
-            "taskName": "serve",
-            "isBuildCommand": true,
-            "showOutput": "always"
+            "label": "serve",
+            "type": "gulp",
+            "task": "serve",
+            "problemMatcher": [],
+            "group": {
+                "_id": "build",
+                "isDefault": false
+            }
         },
         {
-            "taskName": "watch",
-            "isBuildCommand": true,
-            "showOutput": "always"
+            "label": "watch",
+            "type": "gulp",
+            "task": "watch",
+            "problemMatcher": [],
+            "group": {
+                "_id": "build",
+                "isDefault": false
+            }
         }
     ]
 }
